@@ -4,11 +4,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ['react-router-dom', 'react-toastify'], // Ensure react-toastify is pre-bundled
+    include: ['react-router-dom'],
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom', 'react-toastify'], // Externalize react-toastify
+      external: ['react-toastify'], // Example of merging changes
     },
   },
 });
