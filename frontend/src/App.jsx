@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes,Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Open from './pages/Open.jsx';
 import Cart from './pages/Cart.jsx'
 import About from './pages/About.jsx'
